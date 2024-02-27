@@ -60,3 +60,42 @@ pip install jupyterlab
 
 ## License
 [License](LICENSE.txt)
+
+
+# Project Overview
+
+# Building a Handwritten Digit Classifier
+At the end of the course, you'll build a handwritten digit classifier by:
+
+Setting up a Jupyter notebook and importing the necessary libraries
+Loading and preprocessing your image data
+Designing and building your neural network in PyTorch
+Choosing an optimizer and loss function
+Training your model
+Evaluating your model
+Optimizing your hyperparameters or training process
+This will ultimately allow you to train a model that recognizes handwritten digits like those in the image below, a key step in optical character recognition.
+
+
+
+# Project Instructions
+
+# Step 1
+Load the dataset from torchvision.datasets
+Use transforms or other PyTorch methods to convert the data to tensors, normalize, and flatten the data.
+Create a DataLoader for your dataset
+# Step 2
+Visualize the dataset using the provided function and either:
+Your training data loader and inverting any normalization and flattening
+A second DataLoader without any normalization or flattening
+Explore the size and shape of the data to get a sense of what your inputs look like naturally and after transformation. Provide a brief justification of any necessary preprocessing steps or why no preprocessing is needed.
+# Step 3
+Using PyTorch, build a neural network to predict the class of each given input image
+Create an optimizer to update your network’s weights
+Use the training DataLoader to train your neural network
+# Step 4
+Evaluate your neural network’s accuracy on the test set.
+Tune your model hyperparameters and network architecture to improve your test set accuracy, achieving at least 90% accuracy on the test set.
+
+# Step 5
+Use torch.save to save your trained model.
